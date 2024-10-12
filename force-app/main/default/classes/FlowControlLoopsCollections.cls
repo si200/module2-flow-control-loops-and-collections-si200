@@ -45,7 +45,10 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
-        return null; // Replace null with the variable you used to store the result
+        if(age >= 18){
+            return true;
+        }else
+            return false; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -61,7 +64,14 @@ public with sharing class FlowControlLoopsCollections {
         // Initialize largestNum as null
         Integer largestNum = null;
 
-        return null; // Replace null with the variable you used to store the result
+        if(num1 >= num2){
+            largestNum = num1;
+        }else if (num1 <= num2){
+            largestNum = num2;
+        }else if(num1 == 0 || num2 == 0){
+            return null;
+        }
+        return largestNum; // Replace null with the variable you used to store the result
     }
 
 
