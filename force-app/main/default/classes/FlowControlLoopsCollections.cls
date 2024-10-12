@@ -29,10 +29,12 @@ public with sharing class FlowControlLoopsCollections {
      * @return "Hello World!" if x greater than y, otherwise return null.
      */
     public static String helloWorld(Integer x, Integer y) {
+        
         if(x > y){
             return 'Hello World!';
-        } else
+        } else{
         return null; // Replace null with the variable you used to store the result
+        }
     }
 
     /**
@@ -45,10 +47,12 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
+       
         if(age >= 18){
             return true;
-        }else
+        }else{
             return false; // Replace null with the variable you used to store the result
+        }
     }
 
     /**
@@ -127,7 +131,14 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the input is "Empty", "Null", or "Contains Text".
      */
     public static String checkString(String a) {
-        return null; // Replace null with the variable you used to store the result
+
+        if(a == ''){
+            return 'Empty';
+        }else if(a == null){
+            return 'Null';
+        }else{
+            return 'Contains Text';
+        }
     }
 
     /**
