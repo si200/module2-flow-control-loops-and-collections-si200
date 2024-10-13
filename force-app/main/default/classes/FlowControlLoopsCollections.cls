@@ -198,7 +198,7 @@ public with sharing class FlowControlLoopsCollections {
          for (Integer i = 1; i <= 3; i++){
             greeting += 'Hello World!; ';
          }
-        return greeting; // Replace null with the variable you used to store the result
+        return greeting;
     }
 
     /**
@@ -213,17 +213,18 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String repeatString(String inputString, Integer repeatCount) {
         // Initialize the result String
-
+            String result = '';
         // Use a for loop to append the inputString to the result string repeatCount times
-        /*
-        for () {
-
+        
+        for (Integer i = 0; i < repeatCount; i++) {
+                result += inputString;
             // If it is not the last iteration, add a semicolon to separate the strings
+            if(i < repeatCount - 1){
+                result += '; ';
+            }
         }
-        */
-
         // Return the final result string
-        return null; // Replace null with the variable you used to store the result
+        return result;
     }
 
     /**
