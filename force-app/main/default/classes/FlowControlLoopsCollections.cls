@@ -276,9 +276,7 @@ public with sharing class FlowControlLoopsCollections {
             //add integer to the list
             numbersList.add(i);
         }
-        
-
-        return numbersList; // Replace null with the variable you used to store the result
+        return numbersList;
     }
 
     /**
@@ -294,8 +292,10 @@ public with sharing class FlowControlLoopsCollections {
         Set<String> stringSet = new Set<String>();
 
         //add strings to the set
-
-        return null; // Replace null with the variable you used to store the result
+        for(String i : inputList){
+            stringSet.add(i);
+        }
+        return stringSet; // Replace null with the variable you used to store the result
     }
 
     /**
