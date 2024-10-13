@@ -242,7 +242,7 @@ public with sharing class FlowControlLoopsCollections {
         numbersList.add(3);
 
         // Return the populated list
-        return numbersList; // Replace null with the variable you used to store the result
+        return numbersList;
     }
 
     /**
@@ -252,14 +252,14 @@ public with sharing class FlowControlLoopsCollections {
      * @return A List of integers from 1 to 5, excluding the number 3.
      */
     public static List<Integer> createAndRemoveFromList() {
-        // Create a new list of integers and add numbers 1 to 5
-        List<Integer> numberList = new List<Integer>{1, 2, 3, 4, 5}; //DO NOT CHANGE
+   // Create a new list of integers and add numbers 1 to 5
+   List<Integer> numberList = new List<Integer>{1, 2, 3, 4, 5}; //DO NOT CHANGE
 
-        // Remove the 3rd element (number 3) from the list
-        
-        // Return the updated list
-        return null; // Replace null with the variable you used to store the result
-    }
+   // Remove the 3rd element (number 3) from the list
+   numberList.remove(2);
+   // Return the updated list
+   return numberList;
+}
 
     /**
      * Question 13
